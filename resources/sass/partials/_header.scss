@@ -1,0 +1,31 @@
+header {
+  .top {
+    background-color: $primary-blue;
+    a {
+      color: white;
+      text-decoration: none;
+      padding-left: 60px;
+      font-size: 12px;
+    }
+  }
+  .navbar-nav {
+    margin: auto;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    li {
+      text-transform: uppercase;
+      a {
+        font-weight: bold;
+        font-size: 15px;
+        &:hover {
+          color: $primary-blue;
+          border-bottom: 5px solid $primary-blue;
+        }
+      }
+    }
+  }  
+}

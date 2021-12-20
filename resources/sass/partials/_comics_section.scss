@@ -1,0 +1,75 @@
+.comics-section {
+    background-color: #1c1c1c;
+    .container {
+        padding: 70px 0 0 0;
+        .card {
+            background-color: transparent;
+            border: none;
+            &:hover {
+                .overlay {
+                    opacity: 1;
+                }
+            }
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                object-position: top;
+            }
+            h3 {
+                color: white;
+                text-transform: uppercase;
+                padding: 10px 0;
+                font-size: 18px;
+            }
+            .overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 250px;
+                opacity: 0;
+                background-color: rgba(88, 88, 88, 0.39);
+                backdrop-filter: blur(8px);
+                transition: opacity 0.5s;
+                p {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-align: center;
+                    padding-top: 60px;
+                }
+            }
+        }
+        .current-series {
+            position: relative;
+            button {
+              position: absolute;
+              bottom: 730px;
+              left: -15px;
+              color: white;
+              font-size: 25px;
+              background-color: #0282f9;
+              border: 3px solid #0282f9;
+              font-weight: bolder;
+              padding: 5px 15px;
+            }
+        }
+        .btn-container {
+            text-align: center;
+            padding-bottom: 30px;
+            button {
+              color: white;
+              font-size: 15px;
+              background-color: #0282f9;
+              border: 3px solid #0282f9;
+              font-weight: bolder;
+              padding: 8px 50px;
+              margin-top: 40px;
+              &:hover {
+                border: 3px solid white;
+              }
+            }
+        }
+    }
+  }
