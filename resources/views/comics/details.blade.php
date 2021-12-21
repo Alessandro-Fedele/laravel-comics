@@ -25,17 +25,19 @@ $writers = $comic["writers"];
             </div>
         </div>
         <div class="col col-5 text-end">
-            <span>ADVERTISEMENT</span>
+            <h6>ADVERTISEMENT</h6>
             <img src="{{asset('images/advertisement.jpg')}}" alt="adv">
         </div>
     </div>
-    <div class="">
+</div>
+<div class="grey-cont">
+    <div class="container">
         <div class="row">
             <div class="col col-6">
-                <div>
+                <div class="bbg pb-4">
                     <h2>Talent</h2>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex bbg py-2">
                     <div>Art by:</div>
                     <div>
                         @foreach ($artists as $artist)
@@ -47,7 +49,7 @@ $writers = $comic["writers"];
                         @endforeach
                     </div>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex bbg py-2">
                     <div>Written by:</div>
                     <div>
                         @foreach ($writers as $writer)
@@ -61,10 +63,10 @@ $writers = $comic["writers"];
                 </div>
             </div>
             <div class="col col-6">
-                <div>
+                <div class="bbg pb-4">
                     <h2>Specs</h2>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex bbg py-2">
                     <div>Series:</div>
                     <div>
                         <a href="#">
@@ -72,13 +74,13 @@ $writers = $comic["writers"];
                         </a>
                     </div>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex bbg py-2">
                     <div>U.S. Price:</div>
                     <div>
                         {{ $comic["price"] }}
                     </div>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex bbg py-2">
                     <div>On Sale Date:</div>
                     <div>
                         {{ $comic["sale_date"] }}

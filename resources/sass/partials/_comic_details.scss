@@ -13,9 +13,14 @@
 }
 
 .detail-cont {
-    padding: 60px 0;
-    .grey-cont {
-        width: 100%;
-        background-color: lightgrey;
-    }
+    padding: 60px 0 30px 0;
+}
+.grey-cont {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    padding: 40px 0 120px 0;
+}
+
+.bbg {
+    border-bottom: 1px solid lightgrey;
 }
