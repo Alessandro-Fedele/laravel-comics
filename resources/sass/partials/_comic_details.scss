@@ -12,13 +12,30 @@
     }
 }
 
+.w50 {
+    width: 50%;
+}
+
+.w30 {
+    width: 30%;
+}
 .detail-cont {
     padding: 60px 0 30px 0;
+    .green {
+        background-color: rgb(72, 175, 72);
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+        width: 80%;
+    } 
 }
 .grey-cont {
     width: 100%;
     background-color: rgb(241, 241, 241);
     padding: 40px 0 120px 0;
+    a {
+        color: rgb(31, 181, 207);
+    }
 }
 
 .bbg {

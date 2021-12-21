@@ -15,16 +15,21 @@ $writers = $comic["writers"];
 </div>
 <div class="container detail-cont">
     <div class="row">
-        <div class="col col-7">
+        <div class="col col-8">
             <h1>{{ $comic["title"] }}</h1>
-            <div>
-                <h6>U.S. Price: {{ $comic["price"] }}</h6>
+            <div class="d-flex justify-content-between green my-3">
+                <div>
+                    <h6>U.S. Price: {{ $comic["price"] }}</h6>
+                </div>
+                <div>
+                    AVAILABLE
+                </div>
             </div>
             <div>
                 <p>{{ $comic["description"] }}</p>
             </div>
         </div>
-        <div class="col col-5 text-end">
+        <div class="col col-4 text-end">
             <h6>ADVERTISEMENT</h6>
             <img src="{{asset('images/advertisement.jpg')}}" alt="adv">
         </div>
@@ -38,7 +43,7 @@ $writers = $comic["writers"];
                     <h2>Talent</h2>
                 </div>
                 <div class="d-flex bbg py-2">
-                    <div>Art by:</div>
+                    <div class="w50">Art by:</div>
                     <div>
                         @foreach ($artists as $artist)
                         <span>
@@ -50,7 +55,7 @@ $writers = $comic["writers"];
                     </div>
                 </div>
                 <div class="d-flex bbg py-2">
-                    <div>Written by:</div>
+                    <div class="w50">Written by:</div>
                     <div>
                         @foreach ($writers as $writer)
                         <span>
@@ -67,7 +72,7 @@ $writers = $comic["writers"];
                     <h2>Specs</h2>
                 </div>
                 <div class="d-flex bbg py-2">
-                    <div>Series:</div>
+                    <div class="w30">Series:</div>
                     <div>
                         <a href="#">
                             {{ $comic["series"] }}
@@ -75,13 +80,13 @@ $writers = $comic["writers"];
                     </div>
                 </div>
                 <div class="d-flex bbg py-2">
-                    <div>U.S. Price:</div>
+                    <div class="w30">U.S. Price:</div>
                     <div>
                         {{ $comic["price"] }}
                     </div>
                 </div>
                 <div class="d-flex bbg py-2">
-                    <div>On Sale Date:</div>
+                    <div class="w30">On Sale Date:</div>
                     <div>
                         {{ $comic["sale_date"] }}
                     </div>

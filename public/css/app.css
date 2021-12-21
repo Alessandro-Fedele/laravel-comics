@@ -280,14 +280,34 @@ header ul .nav-item .nav-link.active {
   border: 1px solid white;
 }
 
+.w50 {
+  width: 50%;
+}
+
+.w30 {
+  width: 30%;
+}
+
 .detail-cont {
   padding: 60px 0 30px 0;
+}
+
+.detail-cont .green {
+  background-color: #48af48;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  width: 80%;
 }
 
 .grey-cont {
   width: 100%;
   background-color: #f1f1f1;
   padding: 40px 0 120px 0;
+}
+
+.grey-cont a {
+  color: #1fb5cf;
 }
 
 .bbg {
