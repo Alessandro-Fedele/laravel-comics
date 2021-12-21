@@ -16,12 +16,16 @@ header {
     align-items: center;
     height: 100%;
     margin: 0;
-    li {
+    .nav-item {
       text-transform: uppercase;
-      a {
+      .nav-link {
         font-weight: bold;
         font-size: 15px;
         &:hover {
+          color: $primary-blue;
+          border-bottom: 5px solid $primary-blue;
+        }
+        &.active {
           color: $primary-blue;
           border-bottom: 5px solid $primary-blue;
         }

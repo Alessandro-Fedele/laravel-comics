@@ -1,0 +1,21 @@
+.b-bar {
+    width: 100%;
+    height: 70px;
+    background-color: $primary-blue;
+}
+
+.comic-img {
+    bottom: 20px;
+    left: 290px;
+    img {
+        border: 1px solid white;
+    }
+}
+
+.detail-cont {
+    padding: 60px 0;
+    .grey-cont {
+        width: 100%;
+        background-color: lightgrey;
+    }
+}

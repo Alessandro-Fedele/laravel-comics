@@ -3,14 +3,14 @@
         <div class="row row-cols-2 row-cols-md-6 g-4">
             @foreach ($comics as $comic)
             <div class="col">
-                <div class="card">
+                <a class="card" href="{{ route('comics.details', ['id' => $loop->index]) }}">
                     <img src="{{ $comic['thumb']}}" class="card-img-top" alt="{{$comic['series']}}">
                     <h3>{{$comic['series']}}</h3>
                     <div class="overlay">
                         <p>{{$comic['title']}}</p>
                         <p>{{$comic['price']}}</p>
                     </div>
-                </div>
+                </a>
             </div>
             @endforeach
         </div>

@@ -20,5 +20,32 @@ Route::get('/', function () {
 Route::get('/comics', function () {
     $comicsArray = config('comics');
 
+    $data = [];
+    // uso l'indice come ID
+    foreach ($comicsArray as $index => $comic) {
+        $comic["id"] = $index;
+        $data[] = $comic;
+    }
+    // dump($data);
+
     return view('comics.index', ["comics" => $comicsArray]);
 })->name("comics");
+
+// {id}->Parametro url - che può cambiare
+Route::get('/comics/{id?}', function ($id) {
+    $data = config('comics');
+
+    if (is_numeric($id) && $id >= 0 && $id < count($data)) {
+        $comic = $data[$id];
+
+        return view("comics.details", [
+            "comic" => $comic
+        ]);
+    } else {
+        abort('404');
+    }
+})->name("comics.details");
+
+Route::get('/extra', function () {
+    return view("pages.index");
+})->name("pages.index");

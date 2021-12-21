@@ -2,45 +2,47 @@
 $linkNav = [
 [
 "linkText" => "Characters",
-"href" => "/"
+"href" => "homepage.index"
 ],
 [
 "linkText" => "Comics",
-"href" => "/comics"
+"href" => "comics"
 ],
 [
 "linkText" => "Movies",
-"href" => "#"
+"href" => "pages.index"
 ],
 [
 "linkText" => "TV",
-"href" => "#"
+"href" => "pages.index"
 ],
 [
 "linkText" => "Games",
-"href" => "#"
+"href" => "pages.index"
 ],
 [
 "linkText" => "Collectibles",
-"href" => "#"
+"href" => "pages.index"
 ],
 [
 "linkText" => "Videos",
-"href" => "#"
+"href" => "pages.index"
 ],
 [
 "linkText" => "Fans",
-"href" => "#"
+"href" => "pages.index"
 ],
 [
 "linkText" => "News",
-"href" => "#"
+"href" => "pages.index"
 ],
 [
 "linkText" => "Shop",
-"href" => "#"
+"href" => "pages.index"
 ],
-]
+];
+
+$routeName = Request::route()->getName();
 @endphp
 
 <header>
@@ -62,7 +64,7 @@ $linkNav = [
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     @foreach ($linkNav as $link)
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ $link['href'] }}">{{ $link['linkText'] }}</a>
+                        <a class="nav-link {{ $routeName === $link['href'] ? 'active' : ''}}" href="{{ route($link['href']) }}">{{ $link['linkText'] }}</a>
                     </li>
                     @endforeach
                 </ul>
